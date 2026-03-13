@@ -1,3 +1,98 @@
+# 📈 Timeseries Modelling - Auto ARIMA
+**Timeseries Modelling | Machine Learning Bootcamp - Dibimbing.id**
+
+**Author:** Lhedya Monica Ismon
+
+---
+
+## 🎯 Objective
+Melakukan analisis dan pemodelan data timeseries menggunakan 
+Auto ARIMA untuk memprediksi tren ke depan, dengan terlebih 
+dahulu menganalisis trend, seasonality, decomposition, 
+dan stationarity data.
+
+---
+
+## 🗃️ Dataset
+| Info | Detail |
+|------|--------|
+| Source | Library Darts (built-in dataset) |
+| Tipe Data | Time Series |
+| Tools | Google Colab, Python |
+
+---
+
+## 📋 Analysis Steps
+
+### 1️⃣ EDA - Trend & Seasonality
+- Pengecekan visual trend data dari waktu ke waktu
+- Identifikasi pola seasonality (musiman)
+- Decomposition data timeseries (Trend + Seasonal + Residual)
+
+### 2️⃣ Stationarity Check - ADF Test
+- Augmented Dickey-Fuller (ADF) Test
+- Menentukan apakah data bersifat **Additive** atau **Multiplicative**
+- Transformation method jika data tidak stasioner
+
+### 3️⃣ Auto ARIMA Modelling
+- Training model Auto ARIMA
+- Prediksi data future
+- Evaluasi model dengan metrik MAE, RMSE, MAPE
+
+---
+
+## 📊 Hasil Analisis
+
+### Trend & Seasonality
+| Komponen | Hasil Interpretasi |
+|----------|-------------------|
+| Trend | ... (isi sesuai hasil) |
+| Seasonality | ... (isi sesuai hasil) |
+| Decomposition | Additive / Multiplicative |
+
+### ADF Test Result
+| Parameter | Nilai |
+|-----------|-------|
+| ADF Statistic | ... |
+| p-value | ... |
+| Kesimpulan | Stationary / Non-Stationary |
+| Tipe Data | Additive / Multiplicative |
+| Transformation | Differencing / Log Transform / dll |
+
+### Model Evaluation
+| Model | MAE | RMSE | MAPE |
+|-------|-----|------|------|
+| Auto ARIMA | ... | ... | ... |
+
+---
+
+## 📸 Visualisasi
+
+### Trend & Seasonality
+![Trend](screenshots/trend_plot.png)
+
+---
+
+## 🔧 Tools & Libraries
+```python
+# Libraries yang digunakan
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from darts import TimeSeries
+from darts.models import AutoARIMA
+from statsmodels.tsa.stattools import adfuller
+from statsmodels.tsa.seasonal import seasonal_decompose
+```
+
+---
+
+## 📁 File Structure
+- `notebook/` → Google Colab (.ipynb)
+- `screenshots/` → Visualisasi hasil analisis
+- `portfolio/` → Dokumentasi lengkap
+
 ## 💡 Kesimpulan
 
 ### 📊 Karakteristik Data
